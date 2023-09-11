@@ -4,6 +4,9 @@ cmake_minimum_required(VERSION 3.10)
 # project 名称
 project(ComputerRoomMS)
 
+# 设置CMake 构建版本，默认为 Release
+set(CMAKE_BUILD_TYPE "Debug")
+
 # 创建变量 SOURCE 包含所有 cpp 文件
 set(SOURCES 
     src/main.cpp
