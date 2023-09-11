@@ -1,11 +1,34 @@
-CMakeLists.txt.user
+# CMake
+CMakeFiles/
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
+CMakeScripts/
+Testing/
 Makefile
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
-_deps
+_deps/
+
+# 编译输出和构建目录
+build/
+bin/
+lib/
+*.so
+*.dll
+*.dylib
+
+# 临时文件和编辑器生成的文件
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# 依赖管理器生成的目录
+vcpkg_installed/
+conan_build/
+
+# 用户特定文件和目录
+user_config.json
+user_data/
