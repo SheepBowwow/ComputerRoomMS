@@ -12,6 +12,8 @@ set(SOURCES
     src/main.cpp
     src/mainMenu.cpp
     src/student.cpp
+    src/teacher.cpp
+    src/manager.cpp
 )
 
 # 用所有的源文件生成一个可执行文件 因为这里定义了SOURCE变量，所以就不需要罗列cpp文件了

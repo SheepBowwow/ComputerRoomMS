@@ -1,9 +1,7 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 
-#include <iostream>
-#include "Identity.h"
-using namespace std;
+#include "identity.h"
 
 class Student : public Identity
 {
