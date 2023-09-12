@@ -8,6 +8,8 @@ class Identity
 {
 public:
     virtual void openMenu() = 0;
+    
+protected:
     string u_Name;
     string u_Pwd;
 };
