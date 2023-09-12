@@ -1,6 +1,9 @@
 #include <iostream>
-# include <Windows.h>
+//# include <Windows.h>
 #include "mainMenu.h"
+#include "loginIn.h"
+#include "globalConstant.h"
+#include <thread>
 using namespace std;
 
 int main()
@@ -16,18 +19,22 @@ int main()
         
         switch (Option)
         {
-        case 1:     //进入管理员界面
+        case STUDENT:     //进入管理员界面
+            LoginIn(STUDENT_FILE, Option);
             break;
-        case 2:     //进入教师界面
+        case TEACHER:     //进入教师界面
+            LoginIn(TEACHER_FILE, Option);
             break;
-        case 3:     //进入学生界面
+        case ADMIN:     //进入学生界面
+            LoginIn(ADMIN_FILE, Option);
             break;
-        case 0:     //退出程序
+        case EXIT:     //退出程序
+            //system("cls");
             exit(0);
             break;
         default:
             cout << "输入有误, 请重新输入" << endl;
-            Sleep(1000);
+            this_thread::sleep_for(std::chrono::seconds(1));
             system("cls");
             break;
         }
