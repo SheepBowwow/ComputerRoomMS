@@ -1,4 +1,5 @@
 #include <iostream>
+# include <Windows.h>
 #include "mainMenu.h"
 using namespace std;
 
@@ -25,6 +26,9 @@ int main()
             exit(0);
             break;
         default:
+            cout << "输入有误, 请重新输入" << endl;
+            Sleep(1000);
+            system("cls");
             break;
         }
     }
