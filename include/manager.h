@@ -7,25 +7,25 @@ using namespace std;
 class Manager :public Identity
 {
 public:
-	//é»˜è®¤æ„é€ 
+	//Ä¬ÈÏ¹¹Ôì
 	Manager();
 
-	//æœ‰å‚æ„é€   ç®¡ç†å‘˜å§“åï¼Œå¯†ç 
+	//ÓĞ²Î¹¹Ôì  ¹ÜÀíÔ±ĞÕÃû£¬ÃÜÂë
 	Manager(string name, string pwd);
 
-	//é€‰æ‹©èœå•
+	//Ñ¡Ôñ²Ëµ¥
 	virtual void operMenu();
 
-	//æ·»åŠ è´¦å·  
+	//Ìí¼ÓÕËºÅ  
 	void addPerson();
 
-	//æŸ¥çœ‹è´¦å·
+	//²é¿´ÕËºÅ
 	void showPerson();
 
-	//æŸ¥çœ‹æœºæˆ¿ä¿¡æ¯
+	//²é¿´»ú·¿ĞÅÏ¢
 	void showComputer();
 
-	//æ¸…ç©ºé¢„çº¦è®°å½•
+	//Çå¿ÕÔ¤Ô¼¼ÇÂ¼
 	void cleanFile();
 };
 

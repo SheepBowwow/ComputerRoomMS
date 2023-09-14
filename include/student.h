@@ -6,31 +6,31 @@
 class Student : public Identity
 {
 public:
-    //é»˜è®¤æ„é€ 
+    //Ä¬ÈÏ¹¹Ôì
     Student();
 
-    //æœ‰å‚æ„é€ 
+    //ÓĞ²Î¹¹Ôì
     Student(int id, string name, string pwd);
 
-    //èœå•
+    //²Ëµ¥
     virtual void openMenu();
 
-    //ç”³è¯·é¢„çº¦
+    //ÉêÇëÔ¤Ô¼
     void applyOrder();
 
-    //æŸ¥çœ‹æˆ‘çš„é¢„çº¦
+    //²é¿´ÎÒµÄÔ¤Ô¼
     void showMyOrder();
 
-    //æŸ¥çœ‹æ‰€æœ‰é¢„çº¦
+    //²é¿´ËùÓĞÔ¤Ô¼
     void showAllOrder();
 
-    //å–æ¶ˆé¢„çº¦
+    //È¡ÏûÔ¤Ô¼
     void cancelOrder();
 
-    //è·å– id
+    //»ñÈ¡ id
     const int &getID() const;
 
-    //è®¾ç½® id
+    //ÉèÖÃ id
     void setID(const int &id);
 
 private:

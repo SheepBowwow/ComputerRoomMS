@@ -1,43 +1,43 @@
 #include "teacher.h"
 using namespace std;
 
-//æ— å‚æ„é€ 
+//ÎŞ²Î¹¹Ôì
 Teacher::Teacher()
 {
     
 }
 
-//æœ‰å‚æ„é€ 
+//ÓĞ²Î¹¹Ôì
 Teacher::Teacher(int id, const string &name, const string &pwd)
 {
 
 }
 
-//èœå•ç•Œé¢
+//²Ëµ¥½çÃæ
 void Teacher::openMenu()
 {
 
 }
 
-//æŸ¥çœ‹æ‰€æœ‰é¢„çº¦
+//²é¿´ËùÓĞÔ¤Ô¼
 void Teacher::showAllOrder()
 {
 
 }
 
-//å®¡æ ¸é¢„çº¦
+//ÉóºËÔ¤Ô¼
 void Teacher::vaildOrder()
 {
 
 }
 
-//è·å– id
+//»ñÈ¡ id
 const int& Teacher::getID() const
 {
     return t_id;
 }
 
-//è®¾ç½® id
+//ÉèÖÃ id
 void Teacher::setID(const int &id)
 {
     

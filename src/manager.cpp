@@ -1,37 +1,37 @@
 #include "manager.h"
 using namespace std;
 
-//é»˜è®¤æ„é€ 
+//Ä¬ÈÏ¹¹Ôì
 Manager::Manager()
 {
 }
 
-//æœ‰å‚æ„é€ 
+//ÓĞ²Î¹¹Ôì
 Manager::Manager(string name, string pwd)
 {
 }
 
-//é€‰æ‹©èœå•
+//Ñ¡Ôñ²Ëµ¥
 void Manager::operMenu()
 {
 }
 
-//æ·»åŠ è´¦å·  
+//Ìí¼ÓÕËºÅ  
 void Manager::addPerson()
 {
 }
 
-//æŸ¥çœ‹è´¦å·
+//²é¿´ÕËºÅ
 void Manager::showPerson()
 {
 }
 
-//æŸ¥çœ‹æœºæˆ¿ä¿¡æ¯
+//²é¿´»ú·¿ĞÅÏ¢
 void Manager::showComputer()
 {
 }
 
-//æ¸…ç©ºé¢„çº¦è®°å½•
+//Çå¿ÕÔ¤Ô¼¼ÇÂ¼
 void Manager::cleanFile()
 {
 }

@@ -36,4 +36,4 @@ add_executable(ComputerRoomMS ${SOURCES})
 target_include_directories(ComputerRoomMS PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
 # 指定 txt 文件
-# target_sources(ComputerRoomMS PUBLIC ${DATA_FILES})
+target_sources(ComputerRoomMS PUBLIC ${DATA_FILES})

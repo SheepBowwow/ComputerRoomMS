@@ -1,55 +1,55 @@
 #include "student.h"
 using namespace std;
 
-//æ— å‚æ„é€ 
+//ÎŞ²Î¹¹Ôì
 Student::Student()
 {
 
 }
 
-//æœ‰å‚æ„é€ 
+//ÓĞ²Î¹¹Ôì
 Student::Student(int id, string name, string pwd)
 {
 
 }
 
-//èœå•é€‰æ‹©
+//²Ëµ¥Ñ¡Ôñ
 void Student::openMenu()
 {
 
 }
 
-//ç”³è¯·é¢„çº¦
+//ÉêÇëÔ¤Ô¼
 void Student::applyOrder()
 {
 
 }
 
-//æŸ¥çœ‹æˆ‘çš„é¢„çº¦
+//²é¿´ÎÒµÄÔ¤Ô¼
 void Student::showMyOrder()
 {
 
 }
 
-//æŸ¥çœ‹æ‰€æœ‰é¢„çº¦
+//²é¿´ËùÓĞÔ¤Ô¼
 void Student::showAllOrder()
 {
 
 }
 
-//å–æ¶ˆé¢„çº¦
+//È¡ÏûÔ¤Ô¼
 void Student::cancelOrder()
 {
 
 }
 
-//è·å–å­¦ç”Ÿid
+//»ñÈ¡Ñ§Éúid
 const int& Student::getID() const 
 {
     return s_id;
 }
 
-//è®¾ç½®å­¦ç”Ÿid
+//ÉèÖÃÑ§Éúid
 void Student::setID(const int &id)
 {
 

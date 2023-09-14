@@ -8,32 +8,32 @@ using namespace std;
 
 int main()
 {
-    //ç”¨æˆ·é€‰é¡¹
+    //ÓÃ»§Ñ¡Ïî
     int Option = -1;
     while (true)
     {
         showMainMenu();
 
-        cout << "è¯·è¾“å…¥æ‚¨çš„é€‰æ‹©: ";
+        cout << "ÇëÊäÈëÄúµÄÑ¡Ôñ: ";
         cin >> Option;
         
         switch (Option)
         {
-        case STUDENT:     //è¿›å…¥ç®¡ç†å‘˜ç•Œé¢
-            LoginIn(STUDENT_FILE, Option);
+        case ADMIN:     //½øÈë¹ÜÀíÔ±½çÃæ
+            LoginIn(ADMIN_FILE, ADMIN);
             break;
-        case TEACHER:     //è¿›å…¥æ•™å¸ˆç•Œé¢
-            LoginIn(TEACHER_FILE, Option);
+        case TEACHER:     //½øÈë½ÌÊ¦½çÃæ
+            LoginIn(TEACHER_FILE, TEACHER);
             break;
-        case ADMIN:     //è¿›å…¥å­¦ç”Ÿç•Œé¢
-            LoginIn(ADMIN_FILE, Option);
+        case STUDENT:     //½øÈëÑ§Éú½çÃæ
+            LoginIn(STUDENT_FILE, STUDENT);
             break;
-        case EXIT:     //é€€å‡ºç¨‹åº
+        case EXIT:     //ÍË³ö³ÌĞò
             //system("cls");
             exit(0);
             break;
         default:
-            cout << "è¾“å…¥æœ‰è¯¯, è¯·é‡æ–°è¾“å…¥" << endl;
+            cout << "ÊäÈëÓĞÎó, ÇëÖØĞÂÊäÈë" << endl;
             this_thread::sleep_for(std::chrono::seconds(1));
             system("cls");
             break;

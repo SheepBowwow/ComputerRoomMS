@@ -2,7 +2,9 @@
 #include <fstream>
 #include "identity.h"
 #include "globalConstant.h"
+#include "student.h"
 #include <thread>
+#include <string>
 using namespace std;
 
 void LoginIn(std::string fileName, int identity)
@@ -12,10 +14,10 @@ void LoginIn(std::string fileName, int identity)
     ifstream ifs;
     ifs.open(fileName, ios::in);
 
-    //æ–‡ä»¶ä¸å­˜åœ¨æƒ…å†µ
+    //ÎÄ¼ş²»´æÔÚÇé¿ö
     if(!ifs.is_open())
     {
-        cout << "æ–‡ä»¶ä¸å­˜åœ¨" << endl;
+        cout << "ÎÄ¼ş²»´æÔÚ" << endl;
         ifs.close();
         this_thread::sleep_for(std::chrono::seconds(1));
         system("cls");
@@ -28,36 +30,52 @@ void LoginIn(std::string fileName, int identity)
 
     if(identity == STUDENT)
     {
-        cout << "å­¦å·: ";
+        cout << "Ñ§ºÅ: ";
         cin >> id;
     }
     else if(identity == TEACHER)
     {
-        cout << "æ•™èŒå·¥å·: ";
+        cout << "½ÌÖ°¹¤ºÅ: ";
         cin >> id;
     }
 
-    cout << "ç”¨æˆ·å: ";
+    cout << "ÓÃ»§Ãû: ";
     cin >> name;
 
-    cout << "å¯†ç : ";
+    cout << "ÃÜÂë: ";
     cin >> pwd;
 
     if(identity == STUDENT)
     {
-        //å­¦ç”Ÿç™»å½•éªŒè¯
+        //Ñ§ÉúµÇÂ¼ÑéÖ¤
+        int fId;
+        string fName;
+        string fPwd;
+        while(ifs >> fId && ifs >> fName && ifs >> fPwd)
+        {
+            //if(fId == id && name.compare(fName) && pwd.compare(fPwd))
+            if(fName == name)
+            {
+                cout << "Ñ§ÉúÑéÖ¤µÇÂ¼³É¹¦" << endl;
+                system("pause");
+                system("cls");
+                user = new Student(id, name, pwd);
+                return;
+            }
+        }
+        cout << fId  << " "<< fName << " " << fPwd << endl;
     }
     else if(identity == TEACHER)
     {
-        //æ•™å¸ˆç™»å½•éªŒè¯
+        //½ÌÊ¦µÇÂ¼ÑéÖ¤
     }
     else if(identity == ADMIN)
     {
-        //ç®¡ç†å‘˜
+        //¹ÜÀíÔ±
     }
-
-    cout << "éªŒè¯ç™»å½•å¤±è´¥! " << endl;
+    
+    cout << "ÑéÖ¤µÇÂ¼Ê§°Ü! " << endl;
     this_thread::sleep_for(std::chrono::seconds(1));
-    system("cls");
+    //system("cls");
     return;
 }

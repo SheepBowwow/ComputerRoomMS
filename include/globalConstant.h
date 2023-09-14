@@ -1,25 +1,25 @@
 #ifndef GLOBAL_FILE_H
 #define GLOBAL_FILE_H
 
-//ç®¡ç†å‘˜æ–‡ä»¶
+//¹ÜÀíÔ±ÎÄ¼ş
 #define ADMIN_FILE     "dataFile/admin.txt"
-//å­¦ç”Ÿæ–‡ä»¶
+//Ñ§ÉúÎÄ¼ş
 #define STUDENT_FILE   "dataFile/student.txt"
-//æ•™å¸ˆæ–‡ä»¶
+//½ÌÊ¦ÎÄ¼ş
 #define TEACHER_FILE   "dataFile/teacher.txt"
-//æœºæˆ¿ä¿¡æ¯æ–‡ä»¶
+//»ú·¿ĞÅÏ¢ÎÄ¼ş
 #define COMPUTER_FILE  "dataFile/computerRoom.txt"
-//è®¢å•æ–‡ä»¶
+//¶©µ¥ÎÄ¼ş
 #define ORDER_FILE     "dataFile/order.txt"
 
-//å­¦ç”Ÿèº«ä»½
-#define STUDENT 1
-//è€å¸ˆèº«ä»½
+//Ñ§ÉúÉí·İ
+#define ADMIN 1
+//ÀÏÊ¦Éí·İ
 #define TEACHER 2
-//ç®¡ç†å‘˜èº«ä»½
-#define ADMIN 3
+//¹ÜÀíÔ±Éí·İ
+#define STUDENT 3
 
-//é€€å‡º
+//ÍË³ö
 #define EXIT 0
 
 #endif

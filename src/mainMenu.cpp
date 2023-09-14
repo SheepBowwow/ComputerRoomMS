@@ -5,9 +5,9 @@ using namespace std;
 void showMainMenu()
 {
     printf("\n");
-    cout << "--------------   æœºæˆ¿ç®¡ç†ç³»ç»Ÿ(ç®¡ç†å‘˜)   --------------" << endl;
-    cout << "                       1ã€ç®¡ç†å‘˜" << endl;
-    cout << "                       2ã€è€å¸ˆ" << endl;
-    cout << "                       3ã€å­¦ç”Ÿ" << endl;
-    cout << "                       0ã€é€€å‡º" << endl;
+    cout << "--------------   »ú·¿¹ÜÀíÏµÍ³(¹ÜÀíÔ±)   --------------" << endl;
+    cout << "                       1¡¢¹ÜÀíÔ±" << endl;
+    cout << "                       2¡¢ÀÏÊ¦" << endl;
+    cout << "                       3¡¢Ñ§Éú" << endl;
+    cout << "                       0¡¢ÍË³ö" << endl;
 }

@@ -6,25 +6,25 @@
 class Teacher : public Identity
 {
 public:
-    //æ— å‚æ„é€ 
+    //ÎŞ²Î¹¹Ôì
     Teacher();
 
-    //æœ‰å‚æ„é€ 
+    //ÓĞ²Î¹¹Ôì
     Teacher(int id, const string &name, const string &pwd);
 
-    //èœå•ç•Œé¢
+    //²Ëµ¥½çÃæ
     virtual void openMenu();
 
-    //æŸ¥çœ‹æ‰€æœ‰é¢„çº¦
+    //²é¿´ËùÓĞÔ¤Ô¼
     void showAllOrder();
 
-    //å®¡æ ¸é¢„çº¦
+    //ÉóºËÔ¤Ô¼
     void vaildOrder();
 
-    //è·å– id
+    //»ñÈ¡ id
     const int &getID() const;
 
-    //è®¾ç½® id
+    //ÉèÖÃ id
     void setID(const int &id);
     
 private:
