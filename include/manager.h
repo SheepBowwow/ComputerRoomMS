@@ -4,7 +4,7 @@
 #include "identity.h"
 using namespace std;
 
-class Manager :public Identity
+class Manager : public Identity
 {
 public:
 	//默认构造
@@ -14,7 +14,7 @@ public:
 	Manager(string name, string pwd);
 
 	//选择菜单
-	virtual void operMenu();
+	virtual void openMenu();
 
 	//添加账号  
 	void addPerson();

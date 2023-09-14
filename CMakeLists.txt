@@ -18,6 +18,7 @@ set(SOURCES
     src/teacher.cpp
     src/manager.cpp
     src/loginIn.cpp
+    src/globalConstant.cpp
 )
 
 # 创建变量 DATA_FILES 包含 txt 文件 用于读写数据

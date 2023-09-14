@@ -3,7 +3,9 @@
 #include "identity.h"
 #include "globalConstant.h"
 #include "student.h"
-#include <thread>
+#include "manager.h"
+#include "teacher.h"
+#include "mainMenu.h"
 #include <string>
 using namespace std;
 
@@ -19,7 +21,7 @@ void LoginIn(std::string fileName, int identity)
     {
         cout << "文件不存在" << endl;
         ifs.close();
-        this_thread::sleep_for(std::chrono::seconds(1));
+        my_sleep(1);
         system("cls");
         return;
     }
@@ -53,29 +55,54 @@ void LoginIn(std::string fileName, int identity)
         string fPwd;
         while(ifs >> fId && ifs >> fName && ifs >> fPwd)
         {
-            //if(fId == id && name.compare(fName) && pwd.compare(fPwd))
-            if(fName == name)
+            if(fId == id && name == fName && pwd == fPwd)
             {
-                cout << "学生验证登录成功" << endl;
+                cout << "学生验证,登录成功" << endl;
                 system("pause");
                 system("cls");
                 user = new Student(id, name, pwd);
                 return;
             }
         }
-        cout << fId  << " "<< fName << " " << fPwd << endl;
     }
     else if(identity == TEACHER)
     {
-        //教师登录验证
+        int fId;
+        string fName;
+        string fPwd;
+        while(ifs >> fId && ifs >> fName && ifs >> fPwd)
+        {
+            if(fId == id && name == fName && pwd == fPwd)
+            {
+                cout << "教师验证,登录成功" << endl;
+                system("pause");
+                system("cls");
+                user = new Teacher(id, name, pwd);
+                return;
+            }
+        }
     }
     else if(identity == ADMIN)
     {
-        //管理员
+        string fName;
+        string fPwd;
+        while(ifs >> fName && ifs >> fPwd)
+        {
+            if(name == fName && pwd == fPwd)
+            {
+                cout << "管理员验证,登录成功" << endl;
+                system("pause");
+                system("cls");
+                user = new Manager(name, pwd);
+                managerMenu(user);
+                return;
+            }
+        }
     }
     
     cout << "验证登录失败! " << endl;
-    this_thread::sleep_for(std::chrono::seconds(1));
-    //system("cls");
+    my_sleep(1);
+
+    system("cls");
     return;
 }

@@ -21,6 +21,7 @@ int main()
         {
         case ADMIN:     //进入管理员界面
             LoginIn(ADMIN_FILE, ADMIN);
+            
             break;
         case TEACHER:     //进入教师界面
             LoginIn(TEACHER_FILE, TEACHER);
@@ -34,7 +35,7 @@ int main()
             break;
         default:
             cout << "输入有误, 请重新输入" << endl;
-            this_thread::sleep_for(std::chrono::seconds(1));
+            my_sleep(1);
             system("cls");
             break;
         }
