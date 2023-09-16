@@ -24,9 +24,24 @@ public:
     //获取 id
     const int &getID() const;
 
+    //获取姓名
+    const string &getName() const;
+    
+    //获取密码
+    const string &getPwd() const;
+
     //设置 id
     void setID(const int &id);
-    
+
+    //设置 name
+    void setName(const string &name);
+
+    //设置 pwd
+    void setPwd(const string &pwd);
+
+    //重载==
+    bool operator==(const Teacher &other) const {return other.getID() == t_id;}
+
 private:
     int t_id;
 };

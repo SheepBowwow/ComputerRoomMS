@@ -2,6 +2,10 @@
 #define MANAGER_H
 
 #include "identity.h"
+#include "student.h"
+#include "teacher.h"
+#include "computerRoom.h"
+#include <vector>
 using namespace std;
 
 class Manager : public Identity
@@ -27,6 +31,22 @@ public:
 
 	//清空预约记录
 	void cleanFile();
+
+	//初始化容器,读取文件中的账号
+	void initVector();
+
+	//容器接口
+    bool findPerson(int identity, int id);
+
+private:
+	//学生容器
+	vector<Student> vStu;
+
+	//教师容器
+	vector<Teacher> vTea;
+
+	//机房容器
+	vector<ComputerRoom> vCom;
 };
 
 #endif

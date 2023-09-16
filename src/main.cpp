@@ -1,11 +1,12 @@
 #include <iostream>
-//# include <Windows.h>
 #include "mainMenu.h"
 #include "loginIn.h"
 #include "globalConstant.h"
 #include <thread>
 using namespace std;
 
+
+//order 格式 date(周几) interval(时间段) stuID(学号) stuName(学生姓名) roomID(机房编号) status(状态) 
 int main()
 {
     //用户选项
@@ -21,7 +22,6 @@ int main()
         {
         case ADMIN:     //进入管理员界面
             LoginIn(ADMIN_FILE, ADMIN);
-            
             break;
         case TEACHER:     //进入教师界面
             LoginIn(TEACHER_FILE, TEACHER);

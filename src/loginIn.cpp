@@ -61,6 +61,7 @@ void LoginIn(std::string fileName, int identity)
                 system("pause");
                 system("cls");
                 user = new Student(id, name, pwd);
+                studentMenu(user);
                 return;
             }
         }

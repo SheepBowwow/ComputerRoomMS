@@ -8,5 +8,6 @@
 
 void showMainMenu();
 void managerMenu(Identity *&manager);
+void studentMenu(Identity *&student);
 
 #endif
